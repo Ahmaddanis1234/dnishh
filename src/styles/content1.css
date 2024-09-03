@@ -1,0 +1,40 @@
+/* src/styles/content1.css */
+
+/* Container with relative positioning */
+.container {
+    position: relative;
+    width: 100%; /* Adjust as needed for full width */
+    height: 100vh; /* Adjust height as needed; e.g., 100vh for full viewport height */
+    overflow: hidden; /* Hide overflow to ensure the image covers the container */
+  }
+  
+  /* Image styling to cover the container */
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    object-position: center; /* Center the image */
+  }
+  
+  /* Centered text styling */
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Initial text color */
+    font-size: 3rem; /* Adjust font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Initial text shadow */
+    z-index: 1; /* Ensure text is on top */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect for centered text */
+  .centered-text:hover {
+    color: rgb(255, 121, 121); /* Change text color on hover */
+    text-shadow: 0 0 10px red; /* Change text shadow on hover */
+  }
+  
